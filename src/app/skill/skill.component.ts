@@ -9,14 +9,40 @@ export class SkillComponent implements OnInit {
 
   @Input() title: string;
   @Input() value: string;
+  public icon: string;
+
+
 
   constructor() { }
 
   ngOnInit() {
+    this.getIcon();
   }
 
-  barWidth(){
-    const style = {'width': this.value + "%"};
+  private iconsPack: Object = {
+    "HTML": "devicon-html5-plain-wordmark",
+    "Javascript": "devicon-javascript-plain",
+    "CSS": "devicon-css3-plain-wordmark",
+    "Bootstrap": "devicon-bootstrap-plain-wordmark",
+    "Python": "devicon-python-plain",
+    "PHP": "devicon-php-plain",
+    "C++": "devicon-cplusplus-plain",
+    "C#": "devicon-csharp-plain",
+    "Git": "devicon-git-plain",
+    "SASS": "devicon-sass-original",
+    "Java": "devicon-java-plain"
+  };
+
+  getIcon() {
+    let icon = this.title;
+    this.icon = this.iconsPack[icon];
+    console.log(this.title);
+    console.log(this.icon);
+    console.log(this.icon == null);
+  }
+
+  barWidth() {
+    const style = { 'width': this.value + "%" };
     return style;
   }
 
