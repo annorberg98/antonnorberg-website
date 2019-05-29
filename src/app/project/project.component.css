@@ -1,0 +1,7 @@
+header#header {
+  height: 30vh;
+}
+
+header#header > #header-content {
+  border: none;
+}
