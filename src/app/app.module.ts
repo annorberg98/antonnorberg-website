@@ -4,24 +4,26 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
-import { MatButtonModule, MatCardModule, MatToolbarModule } from '@angular/material';
+import { MatButtonModule, MatCardModule, MatToolbarModule, MatProgressSpinnerModule } from '@angular/material';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { HomeComponent } from './home/home.component';
+import { HomePageComponent } from './homepage/homepage.component';
 
 import { ContentService } from './shared/services/content.service';
 import { NavbarComponent } from './navbar/navbar.component';
 import { SkillslistComponent } from './skillslist/skillslist.component';
 import { SkillComponent } from './skill/skill.component';
+import { ProjectPageComponent } from './projectpage/projectpage.component';
 import { ProjectComponent } from './project/project.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent,
+    HomePageComponent,
     NavbarComponent,
     SkillslistComponent,
     SkillComponent,
+    ProjectPageComponent,
     ProjectComponent,
   ],
   imports: [
@@ -30,7 +32,8 @@ import { ProjectComponent } from './project/project.component';
     BrowserAnimationsModule,
     MatToolbarModule,
     MatButtonModule,
-    MatCardModule
+    MatCardModule,
+    MatProgressSpinnerModule
   ],
   providers: [ContentService],
   bootstrap: [AppComponent]

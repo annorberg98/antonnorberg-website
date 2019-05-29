@@ -36,9 +36,6 @@ export class SkillComponent implements OnInit {
   getIcon() {
     let icon = this.title;
     this.icon = this.iconsPack[icon];
-    console.log(this.title);
-    console.log(this.icon);
-    console.log(this.icon == null);
   }
 
   barWidth() {

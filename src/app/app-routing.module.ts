@@ -1,23 +1,25 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
-import { HomeComponent } from './home/home.component';
-import { ProjectComponent } from './project/project.component';
+import { HomePageComponent } from './homepage/homepage.component';
+import { ProjectPageComponent } from './projectpage/projectpage.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
   {
-    path: 'home', component: HomeComponent, data: {
-      page: 'home'
+    path: 'home', component: HomePageComponent, data: {
+      page: 'home',
+      title: 'Anton Norberg'
     }
   },
   {
-    path: 'projects', component: ProjectComponent, data: {
-      page: 'projects'
+    path: 'projects', component: ProjectPageComponent, data: {
+      page: 'projects',
+      title: 'Anton Norberg | Projects'
     }
   },
   {
-    path: 'contact', component: HomeComponent, data: {
+    path: 'contact', component: HomePageComponent, data: {
       page: 'contact'
     }
   },

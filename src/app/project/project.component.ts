@@ -1,5 +1,4 @@
-import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-project',
@@ -8,9 +7,10 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class ProjectComponent implements OnInit {
 
-  page: Object;
+  @Input() name: string;
+  @Input() link: string;
 
-  constructor(private route: ActivatedRoute) { }
+  constructor() { }
 
   ngOnInit() {
   }

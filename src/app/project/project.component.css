@@ -1,28 +1,21 @@
-html,
-body {
-  background-color: #5c3d9c;
-  margin: 0;
+img.git-img {
+  margin: auto;
 }
 
-header#header {
-  height: 30vh;
+div.project-item {
+  padding: 0;
+  margin: auto;
+  box-sizing: border-box;
+  transition-duration: 0.3s;
 }
 
-header#header > #header-content {
-  border: none;
+div.project-item:hover {
 }
 
-main {
-  height: auto;
-  bottom: 0;
-  overflow: auto;
-  margin: 0;
+div.project-item > a {
+  transition-duration: 0.3s;
 }
 
-footer {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  margin-top: 0;
+div.project-item > a:hover {
+  text-decoration: none;
 }
