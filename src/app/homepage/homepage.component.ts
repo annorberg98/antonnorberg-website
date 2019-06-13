@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { ContentService } from '../shared/services/content.service';
 import { Content } from '@angular/compiler/src/render3/r3_ast';
 import { ActivatedRoute } from '@angular/router';
 
@@ -11,8 +10,7 @@ import { ActivatedRoute } from '@angular/router';
 export class HomePageComponent implements OnInit {
   page: Object;
 
-  constructor(private route: ActivatedRoute,
-    private contentService: ContentService) { }
+  constructor(private route: ActivatedRoute) { }
 
   ngOnInit() {
     /*const pageData = this.route.snapshot.data['page'];

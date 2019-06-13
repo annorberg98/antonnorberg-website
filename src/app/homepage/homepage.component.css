@@ -9,3 +9,7 @@
 .col-lg-6 {
   padding: 0;
 }
+
+ul.contact-list > li {
+  display: inline-block;
+}

@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ContentService } from '../shared/services/content.service';
-import { SkillComponent } from '../skill/skill.component';
+import { Skill } from './skill.component';
 
 @Component({
   selector: 'app-skillslist',
@@ -47,7 +46,7 @@ export class SkillslistComponent implements OnInit {
     { 'Wordpress': 50 }
   ];
 
-  constructor(private content: ContentService) {
+  constructor() {
 
   }
 
