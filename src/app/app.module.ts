@@ -14,6 +14,7 @@ import { SkillslistComponent } from './skillslist/skillslist.component';
 import { Skill } from './skillslist/skill.component';
 import { ProjectPageComponent } from './projectpage/projectpage.component';
 import { ProjectComponent } from './project/project.component';
+import { PersonalpageComponent } from './personalpage/personalpage.component';
 
 
 
@@ -26,6 +27,7 @@ import { ProjectComponent } from './project/project.component';
     Skill,
     ProjectPageComponent,
     ProjectComponent,
+    PersonalpageComponent,
   ],
   imports: [
     BrowserModule,

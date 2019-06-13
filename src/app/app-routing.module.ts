@@ -3,6 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 
 import { HomePageComponent } from './homepage/homepage.component';
 import { ProjectPageComponent } from './projectpage/projectpage.component';
+import { PersonalpageComponent } from './personalpage/personalpage.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
@@ -21,6 +22,11 @@ const routes: Routes = [
   {
     path: 'contact', component: HomePageComponent, data: {
       page: 'contact'
+    }
+  },
+  {
+    path: 'personal', component: PersonalpageComponent, data: {
+      page: 'personal'
     }
   },
   { path: '**', redirectTo: '/home', pathMatch: 'full' }

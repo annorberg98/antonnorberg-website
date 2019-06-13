@@ -13,3 +13,7 @@
 ul.contact-list > li {
   display: inline-block;
 }
+
+section#personalSection {
+  color: white;
+}
