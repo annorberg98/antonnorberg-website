@@ -36,3 +36,36 @@ div.col-lg-4 {
   padding: 0;
   text-align: center;
 }
+
+section.content {
+  padding: 0;
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+div.col-lg-6 {
+  padding: 0;
+}
+
+img.img-fluid {
+  width: 100%;
+  height: auto;
+  overflow: auto;
+}
+
+div.contentText {
+  padding: 5px;
+}
+
+div#coding {
+  background-image: url("https://cdn-images-1.medium.com/max/720/1*yAcGCSUO-eka80U0NszIVw.jpeg");
+}
+
+div.image {
+  height: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}

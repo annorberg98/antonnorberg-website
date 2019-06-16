@@ -6,7 +6,7 @@ import { Component, OnInit, Input } from '@angular/core';
     template: `
     <div><p><b>{{title}}</b> <span *ngIf="icon"> </span><i class="{{icon}}"></i></p>
     <div class="progress">
-        <div class="progress-bar progress-bar-striped bg-primary" role="progressbar" [ngStyle]="barWidth()"
+        <div class="progress-bar progress-bar-striped bg-{{color}}" role="progressbar" [ngStyle]="barWidth()"
         attr.aria-valuenow="{{value}}" aria-valuemin="0" aria-valuemax="100"></div>
     </div>
     </div>`
@@ -16,7 +16,9 @@ export class Skill implements OnInit {
 
     @Input() title: string;
     @Input() value: string;
+    @Input() area: string;
     public icon: string;
+    public color: string;
 
 
 
@@ -24,6 +26,7 @@ export class Skill implements OnInit {
 
     ngOnInit() {
         this.getIcon();
+        this.setColor();
     }
 
     private iconsPack: Object = {
@@ -37,12 +40,28 @@ export class Skill implements OnInit {
         "C#": "devicon-csharp-plain",
         "Git": "devicon-git-plain",
         "SASS": "devicon-sass-original",
-        "Java": "devicon-java-plain"
+        "Java": "devicon-java-plain",
+        "Databases & SQL": "devicon-postgresql-plain",
+        "TypeScript": "devicon-typescript-plain"
     };
 
     getIcon() {
         let icon = this.title;
         this.icon = this.iconsPack[icon];
+    }
+
+    setColor() {
+        let color: string;
+        if (this.area == 'programming') {
+            color = 'primary';
+        } else if (this.area == 'web') {
+            color = 'danger';
+        } else if (this.area == 'other') {
+            color = 'success';
+        } else {
+            color = 'dark';
+        }
+        this.color = color;
     }
 
     barWidth() {
