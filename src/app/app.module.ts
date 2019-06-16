@@ -8,6 +8,7 @@ import { HomepageComponent } from './homepage/homepage.component';
 import { SkillslistComponent } from './skillslist/skillslist.component';
 import { Skill } from './skillslist/skill.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,

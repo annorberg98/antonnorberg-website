@@ -1,5 +1,91 @@
 @import '~src/sass/variables';
 
+header#header {
+  height: 100vh;
+  background-color: $header-bg;
+  z-index: 0;
+  font-size: 5rem;
+}
+
+main {
+  font-size: 1rem;
+}
+
+span#letter-a {
+  color: $letter-a-color;
+}
+
+span#letter-n {
+  color: $letter-n-color;
+}
+
+.social-icons {
+  font-size: 20px;
+  text-decoration: none;
+  margin-left: 0.5rem;
+}
+
+
+@media (max-width: 1200px) {
+  header#header {
+    font-size: calc(1.8rem + 4.2666666667vw);
+  }
+}
+
+header>#header-content {
+  position: relative;
+  top: 40%;
+  background-color: transparent;
+  color: #fff;
+  border: 10px solid #fff;
+  border-radius: 0;
+  width: 50%;
+  margin: auto;
+  font-weight: bold;
+  padding: 5px;
+  font-family: $header-font;
+  z-index: 1;
+  /*display: none;*/
+}
+
+section.content {
+  z-index: 1;
+  background-color: $section-bg;
+  margin: 0;
+  padding: 5%;
+  text-align: center;
+  border-radius: 0;
+  border: none;
+}
+
+section#sectionOne {
+  font-family: $header-font;
+}
+
+section#skills {
+  font-family: $header-font;
+}
+
+div#whoAmIContent {
+  color: white;
+}
+
+div#whoAmIContent>p {
+  position: relative;
+  top: 50%;
+  font-size: 18px;
+}
+
+h4.contact-content {
+  font-family: $header-font;
+}
+
+section#competences div.card {
+  color: $section-bg;
+  margin-bottom: 3%;
+}
+
+
 section#WhoAmI {
   padding: 0;
 }
@@ -16,9 +102,14 @@ ul.contact-list>li {
   display: inline-block;
 }
 
+section#personalSection {
+  background-color: $letter-n-color;
+  font-family: $header-font;
+}
+
 section#personalSection,
 section#personalSection>p>a {
-  color: white;
+  color: black;
 }
 
 div.col-lg-6 {
@@ -29,4 +120,53 @@ img.img-fluid {
   width: 100%;
   height: auto;
   overflow: auto;
+}
+
+
+span.first-letter {
+  font-size: 1.5em;
+}
+
+.social-icons:hover {
+  text-decoration: none;
+}
+
+
+div.skill {
+  margin-bottom: 1.5rem;
+}
+
+
+.contact-icons {
+  font-size: 5rem;
+  color: #000;
+}
+
+ul#contact-list {
+  padding: 0;
+  list-style-type: none;
+  text-align: center;
+}
+
+ul#contact-list li a {
+  color: #000;
+  text-decoration: none;
+  -webkit-transition: color 0.5s;
+  transition: color 0.5s;
+}
+
+ul#contact-list li a:hover {
+  color: $icon-a-hover-bg;
+  text-decoration: underline;
+}
+
+ul#contact-list li a i {
+  color: #000;
+  text-decoration: none;
+  -webkit-transition: color 0.5s;
+  transition: color 0.5s;
+}
+
+ul#contact-list li a i:hover {
+  color: $icon-hover-bg;
 }

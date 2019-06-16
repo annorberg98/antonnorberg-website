@@ -4,7 +4,7 @@ import { Component, OnInit, Input } from '@angular/core';
     selector: 'app-skill',
     styleUrls: [],
     template: `
-    <div><p><b>{{title}}</b> <span *ngIf="icon"> </span><i class="{{icon}}"></i></p>
+    <div class="skill"><p><b>{{title}}</b> <span *ngIf="icon"> </span><i class="{{icon}}"></i></p>
     <div class="progress">
         <div class="progress-bar progress-bar-striped bg-{{color}}" role="progressbar" [ngStyle]="barWidth()"
         attr.aria-valuenow="{{value}}" aria-valuemin="0" aria-valuemax="100"></div>
