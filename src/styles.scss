@@ -1,3 +1,6 @@
+@import '~src/sass/variables';
+
+/* You can add global styles to this file, and also import other style files */
 html,
 body {
   padding: 0;
@@ -7,21 +10,25 @@ body {
   width: 100%;
   scroll-behavior: smooth;
 }
+
 .container-fluid {
   padding: 0;
 }
+
 header#header {
   height: 100vh;
   background-color: #181818;
   z-index: 0;
   font-size: 5rem;
 }
+
 @media (max-width: 1200px) {
   header#header {
     font-size: calc(1.8rem + 4.2666666667vw);
   }
 }
-header > #header-content {
+
+header>#header-content {
   position: relative;
   top: 40%;
   background-color: transparent;
@@ -36,22 +43,27 @@ header > #header-content {
   z-index: 1;
   /*display: none;*/
 }
+
 footer {
   background-color: #181818;
   color: #fff;
   margin-bottom: 0;
   padding: 15px;
 }
-footer > p {
+
+footer>p {
   margin-bottom: 0;
 }
+
 main {
   font-size: 1rem;
 }
+
 nav.navbar {
   font-size: 24px;
   padding: 0 1rem;
 }
+
 section.content {
   z-index: 1;
   background-color: #5c3d9c;
@@ -61,82 +73,104 @@ section.content {
   border-radius: 0;
   border: none;
 }
+
 section#sectionOne {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+
 section#competences div.card {
   color: #5c3d9c;
   margin-bottom: 3%;
 }
+
 div.card-body {
   background-color: #fff;
 }
+
 span.first-letter {
   font-size: 1.5em;
 }
+
 span#letter-a {
   color: #08fdd8;
 }
+
 span#letter-n {
   color: #ff0a56;
 }
+
 .social-icons {
   font-size: 20px;
   text-decoration: none;
   margin-left: 0.5rem;
 }
+
 .social-icons:hover {
   text-decoration: none;
 }
+
 div.progress {
   margin-bottom: 1.5rem;
 }
+
 .contact-icons {
   font-size: 5rem;
   color: #000;
 }
+
 .progress-bar {
   transition-duration: 3s;
 }
+
 .center {
   text-align: center;
   margin: 0 auto;
 }
+
 .nav-item:hover {
   background-color: #000;
   color: #fff;
 }
+
 ul#contact-list {
   padding: 0;
   list-style-type: none;
   text-align: center;
 }
+
 ul#contact-list li a {
   color: #000;
   text-decoration: none;
   -webkit-transition: color 0.5s;
   transition: color 0.5s;
 }
+
 ul#contact-list li a:hover {
   color: #f56b5e;
   text-decoration: underline;
 }
+
 ul#contact-list li a i {
   color: #000;
   text-decoration: none;
   -webkit-transition: color 0.5s;
   transition: color 0.5s;
 }
+
 ul#contact-list li a i:hover {
   color: #ed5181;
 }
+
 @media screen and (max-width: 700px) {
-  header > #header-content {
+  header>#header-content {
     width: 100%;
   }
 }
+
 @media screen and (max-width: 576px) {
   div.card {
     margin-top: 10px;
   }
-} /*# sourceMappingURL=main.css.map */
+}
+
+/*# sourceMappingURL=main.css.map */

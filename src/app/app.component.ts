@@ -1,21 +1,15 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { slideInAnimation } from './animations';
 import { Title } from '@angular/platform-browser';
-
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css'],
-  animations: [
-    slideInAnimation,
-  ]
-
+  styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
   title = 'Anton Norberg';
 
-  constructor(private titleService: Title) {
+  constructor(private titleservice: Title) {
     this.setTitle(this.title);
   }
 
@@ -24,6 +18,6 @@ export class AppComponent {
   }
 
   public setTitle(newTitle: string) {
-    this.titleService.setTitle(newTitle);
+    this, this.titleservice.setTitle(newTitle);
   }
 }

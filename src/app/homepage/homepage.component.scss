@@ -1,4 +1,6 @@
-#WhoAmI {
+@import '~src/sass/variables';
+
+section#WhoAmI {
   padding: 0;
 }
 
@@ -10,12 +12,12 @@
   padding: 0;
 }
 
-ul.contact-list > li {
+ul.contact-list>li {
   display: inline-block;
 }
 
 section#personalSection,
-section#personalSection > p > a {
+section#personalSection>p>a {
   color: white;
 }
 
