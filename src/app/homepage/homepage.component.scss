@@ -5,6 +5,7 @@ header#header {
   background-color: $header-bg;
   z-index: 0;
   font-size: 5rem;
+  font-family: $header-font;
 }
 
 main {
@@ -68,11 +69,12 @@ section#skills {
 
 div#whoAmIContent {
   color: white;
+
+  padding: 10px;
+  font-family: 'Quicksand', sans-serif;
 }
 
 div#whoAmIContent>p {
-  position: relative;
-  top: 50%;
   font-size: 18px;
 }
 
@@ -136,6 +138,10 @@ div.skill {
   margin-bottom: 1.5rem;
 }
 
+div.skill>p {
+  color: $section-bg;
+}
+
 
 .contact-icons {
   font-size: 5rem;
@@ -169,4 +175,17 @@ ul#contact-list li a i {
 
 ul#contact-list li a i:hover {
   color: $icon-hover-bg;
+}
+
+
+@media screen and (max-width: 700px) {
+  header>#header-content {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  div.card {
+    margin-top: 10px;
+  }
 }

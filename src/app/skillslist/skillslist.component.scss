@@ -1,1 +1,8 @@
 @import '~src/sass/variables';
+
+
+@media (max-width: 576px) {
+  div.card {
+    margin-top: 15px;
+  }
+}
