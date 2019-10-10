@@ -1,0 +1,7 @@
+a.item-link{
+  color: black;
+}
+
+a.item-link > div:hover {
+  border: #000 solid 2.5px;
+}

@@ -7,6 +7,9 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { HomepageComponent } from './homepage/homepage.component';
 import { SkillslistComponent } from './skillslist/skillslist.component';
 import { Skill } from './skillslist/skill.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { ProjectpageComponent } from './projectpage/projectpage.component';
+import { ProjectItem } from './projectpage/projectitem/projectitem.component';
 
 
 @NgModule({
@@ -16,10 +19,13 @@ import { Skill } from './skillslist/skill.component';
     HomepageComponent,
     SkillslistComponent,
     Skill,
+    ProjectpageComponent,
+    ProjectItem
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]

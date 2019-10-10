@@ -10,7 +10,7 @@ import { Component, OnInit, Input } from '@angular/core';
         attr.aria-valuenow="{{value}}" aria-valuemin="0" aria-valuemax="100"></div>
     </div>
     </div>`,
-    styles: ['p { color: #5c3d9c; font-family: "Nunito", Sans-serif; }']
+    styles: ['p { color: #2e4053; font-family: "Nunito", Sans-serif; }']
 
 })
 export class Skill implements OnInit {
@@ -55,7 +55,7 @@ export class Skill implements OnInit {
     setColor() {
         let color: string;
         if (this.area == 'programming') {
-            color = 'primary';
+            color = 'success';
         } else if (this.area == 'web') {
             color = 'danger';
         } else if (this.area == 'other') {

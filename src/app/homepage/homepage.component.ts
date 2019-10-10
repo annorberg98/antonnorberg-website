@@ -14,6 +14,7 @@ export class HomepageComponent implements OnInit {
   ngOnInit() {
     /*const pageData = this.route.snapshot.data['page'];
     this.page = this.contentService.pages[pageData];*/
+    document.getElementById('home-item').className += ' active';
   }
 
 }

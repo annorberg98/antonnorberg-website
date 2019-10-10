@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
 import { HomepageComponent } from './homepage/homepage.component';
-//import { ProjectPageComponent } from './projectpage/projectpage.component';
+import { ProjectpageComponent } from './projectpage/projectpage.component';
 //import { PersonalpageComponent } from './personalpage/personalpage.component';
 
 const routes: Routes = [
@@ -13,12 +13,12 @@ const routes: Routes = [
       title: 'Anton Norberg'
     }
   },
-  /* {
-     path: 'projects', component: ProjectPageComponent, data: {
+   {
+     path: 'projects', component: ProjectpageComponent, data: {
        page: 'projects',
        title: 'Anton Norberg | Projects'
      }
-   },*/
+   },
   {
     path: 'contact', component: HomepageComponent, data: {
       page: 'contact'

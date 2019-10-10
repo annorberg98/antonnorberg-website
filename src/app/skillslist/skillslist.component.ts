@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { Skill } from './skill.component';
+import { faCode } from '@fortawesome/free-solid-svg-icons';
+import { faLaptopCode } from '@fortawesome/free-solid-svg-icons';
+
 
 @Component({
   selector: 'app-skillslist',
@@ -8,18 +11,19 @@ import { Skill } from './skill.component';
 })
 export class SkillslistComponent implements OnInit {
 
-  imagePath: string = "/assets/images/"
+  imagePath: string = "/assets/images/";
+  private faCode = faCode;
+  private faLaptopCode = faLaptopCode;
 
   programmingImg = [
     'php.svg',
     'python.svg'
-  ]
+  ];
   frontendImg = [
     'html.svg',
     'sass.svg',
     'bootstrap.svg'
-  ]
-
+  ];
 
   programming: Object[] = [
     { 'Python': 60 },

@@ -8,6 +8,7 @@ header#header {
   font-family: $header-font;
 }
 
+
 main {
   font-size: 1rem;
 }
@@ -82,9 +83,13 @@ h4.contact-content {
   font-family: $header-font;
 }
 
+section#competences {
+  background-color: $section-bg-second;
+}
 section#competences div.card {
-  color: $section-bg;
+  color: $section-bg-second;
   margin-bottom: 3%;
+
 }
 
 
@@ -139,7 +144,7 @@ div.skill {
 }
 
 div.skill>p {
-  color: $section-bg;
+  color: $section-bg-second;
 }
 
 

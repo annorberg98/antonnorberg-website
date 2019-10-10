@@ -1,0 +1,64 @@
+@import '~src/sass/variables';
+
+
+main {
+  font-size: 1rem;
+  margin-top: 52px;
+}
+
+footer {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+}
+
+@media (max-width: 1200px) {
+  header#header {
+    font-size: calc(1.8rem + 4.2666666667vw);
+  }
+}
+
+
+section.content {
+  z-index: 1;
+  background-color: $section-bg;
+  margin: 0;
+  padding: 5%;
+  text-align: center;
+  border-radius: 0;
+  border: none;
+}
+
+section#sectionOne {
+  font-family: $header-font;
+}
+
+section.content#projects {
+  background-color: $section-bg-second;
+}
+
+.row {
+  margin: 0;
+}
+
+.col-lg-6 {
+  padding: 0;
+}
+
+@media screen and (max-width: 1000px){
+  main {
+    margin-top: 40px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  header>#header-content {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  div.card {
+    margin-top: 10px;
+  }
+}
